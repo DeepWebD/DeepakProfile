@@ -1,86 +1,245 @@
 <!DOCTYPE html>
-    <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Deepak .</title>
 
-        <!--==================== UNICONS ====================-->
-        
-        <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
-        <!--==================== SWIPER CSS ====================-->
-        <link rel="stylesheet" href="">
-        
-        <!--==================== CSS ====================-->
-        <link rel="stylesheet" href="assets/css/styles.css">
+    <!-- Box icons -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="CSS/style.css" />
+  </head>
 
-        <title>Responsive Portfolio Website</title>
-    </head>
-    <body>
-        <!--==================== HEADER ====================-->
-        <header class="header" id="header">
-            
-        </header>
+  <body>
+    <!-- header design -->
+    <header class="header">
+      <a href="#" class="logo">Deepak .</a>
 
-        <!--==================== MAIN ====================-->
-        <main class="main">
-            <!--==================== HOME ====================-->
-            <section class="home section" id="home">
-                
-            </section>
+      <i class="bx bx-menu" id="menu-icon"></i>
+      <nav class="navbar">
+        <a href="#home" class="active">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">My Skills</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
 
-            <!--==================== ABOUT ====================-->
-            <section class="about section" id="about">
-                
-            </section>
+    <!-- home section design -->
+    <section class="home" id="home">
+      <div class="home-content">
+        <h3>Hello,Its Me</h3>
+        <h1>Deepak Kumar</h1>
+        <h3>And I'm a <span class="multiple-text"></span></h3>
+        <p>
+          Experienced web developer with demonstrated history of working in the
+          various technology.
+        </p>
+        <div class="social-media">
+          <a href="#"><i class="bx bxl-facebook"></i></a>
+          <a href="#"><i class="bx bxl-twitter"></i></a>
+          <a
+            href="https://www.linkedin.com/in/deepak-kumar-610b8ba2/"
+            target="_blank"
+            ><i class="bx bxl-linkedin"></i
+          ></a>
+          <a href="#"><i class="bx bxl-instagram-alt"></i></a>
+        </div>
+        <a href="./CV/Deepak.pdf" target="_blank" class="btn">Download CV</a>
+      </div>
+      <div class="home-img">
+        <img src="./Image/home.png" alt="" srcset="" />
+      </div>
+    </section>
 
-            <!--==================== SKILLS ====================-->
-            <section class="skills section" id="skills">
+    <!-- about section design -->
 
-            </section>
+    <section class="about" id="about">
+      <div class="about-img">
+        <img src="./Image/home.png" alt="" />
+      </div>
+      <div class="about-content">
+        <h2 class="heading">About <span>Me</span></h2>
+        <h2>Frontend developer!</h2>
+        <p>
+          Experienced web developer with demonstrated history (7+ years of
+          experience) of working in the various technology like Angular 2+,
+          React JS, Redux, JavaScript, GitHub, Node JS, HTML, CSS. I have good
+          experience in analyzing requirement and building application..
+        </p>
+        <button class="btn" onclick="readMoreAboutMe()">Read More</button>
+      </div>
+    </section>
 
-            <!--==================== QUALIFICATION ====================-->
-            <section class="qualification section">
+    <!-- Skills section design -->
+    <section class="skills" id="skills">
+      <h2 class="heading">Our <span>service</span></h2>
+      <div class="skills-container">
+        <div class="skills-box">
+          <i class="bx bx-code-alt"></i>
+          <h3>Web Development</h3>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laudantium
+            aspernatur reiciendis, vero voluptatum alias commodi blanditiis
+            quidem sunt vel officiis!
+          </p>
+          <a href="#" class="btn"> Read More</a>
+        </div>
+        <div class="skills-box">
+          <i class="bx bx-paint"></i>
+          <h3>Graphics Design</h3>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laudantium
+            aspernatur reiciendis, vero voluptatum alias commodi blanditiis
+            quidem sunt vel officiis!
+          </p>
+          <a href="#" class="btn"> Read More</a>
+        </div>
 
-            </section>
+        <div class="skills-box">
+          <i class="bx bx-bar-chart-alt"></i>
+          <h3>Digital Marketing</h3>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laudantium
+            aspernatur reiciendis, vero voluptatum alias commodi blanditiis
+            quidem sunt vel officiis!
+          </p>
+          <a href="#" class="btn"> Read More</a>
+        </div>
+      </div>
+    </section>
 
-            <!--==================== SERVICES ====================-->
-            <section class="services section" id="services">
-                
-            </section>
+    <!-- Portfolio section  -->
+    <section class="portfolio" id="portfolio">
+      <h2 class="heading">Lastest <span>Project</span></h2>
+      <div class="portfolio-container">
+        <div class="portfolio-box">
+          <img src="Image/portfolio1.jpg" alt="" />
+          <div class="portfolio-layer">
+            <h4>Web Design</h4>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+              Perspiciatis, cum.
+            </p>
+            <a href="#"><i class="bx bx-link-external"></i></a>
+          </div>
+        </div>
+        <div class="portfolio-box">
+          <img src="Image/portfolio2.jpg" alt="" />
+          <div class="portfolio-layer">
+            <h4>Web Design</h4>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+              Perspiciatis, cum.
+            </p>
+            <a href="#"><i class="bx bx-link-external"></i></a>
+          </div>
+        </div>
+        <div class="portfolio-box">
+          <img src="Image/portfolio3.jpg" alt="" />
+          <div class="portfolio-layer">
+            <h4>Web Design</h4>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+              Perspiciatis, cum.
+            </p>
+            <a href="#"><i class="bx bx-link-external"></i></a>
+          </div>
+        </div>
+        <div class="portfolio-box">
+          <img src="Image/portfolio4.jpg" alt="" />
+          <div class="portfolio-layer">
+            <h4>Web Design</h4>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+              Perspiciatis, cum.
+            </p>
+            <a href="#"><i class="bx bx-link-external"></i></a>
+          </div>
+        </div>
+        <div class="portfolio-box">
+          <img src="Image/portfolio5.jpg" alt="" />
+          <div class="portfolio-layer">
+            <h4>Web Design</h4>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+              Perspiciatis, cum.
+            </p>
+            <a href="#"><i class="bx bx-link-external"></i></a>
+          </div>
+        </div>
+        <div class="portfolio-box">
+          <img src="Image/portfolio6.jpg" alt="" />
+          <div class="portfolio-layer">
+            <h4>Web Design</h4>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+              Perspiciatis, cum.
+            </p>
+            <a href="#"><i class="bx bx-link-external"></i></a>
+          </div>
+        </div>
+      </div>
+    </section>
 
-            <!--==================== PORTFOLIO ====================-->
-            <section class="portfolio section" id="portfolio">
-                
-            </section>
+    <!-- Contact section design -->
+    <section class="contact" id="contact">
+      <h2 class="heading">Contact <span>Me!</span></h2>
 
-            <!--==================== PROJECT IN MIND ====================-->
-            <section class="project section">
+      <form action="#">
+        <div class="input-box">
+          <input type="text" name="name" id="name" placeholder="Full Name" />
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Email Address"
+          />
+        </div>
 
-            </section>
+        <div class="input-box">
+          <input
+            type="number"
+            name="phone"
+            id="phone"
+            placeholder="Mobile Number"
+          />
+          <input
+            type="text"
+            name="emailSubject"
+            id="emailSubject"
+            placeholder="Email Subject"
+          />
+        </div>
+        <textarea
+          name=""
+          id=""
+          cols="30"
+          rows="10"
+          placeholder="Your Message"
+        ></textarea>
+        <input type="submit" value="Send Message" class="btn" />
+      </form>
+    </section>
+    <!-- footer design -->
+    <footer class="footer">
+      <div class="footer-text">
+        <p>Copyright @copy; 2023 by dipWeb | All right reserved</p>
+      </div>
+      <div class="footer-iconTop">
+        <a href="#home"> <i class="bx bx-up-arrow-alt"></i></a>
+      </div>
+    </footer>
 
-            <!--==================== TESTIMONIAL ====================-->
-            <section class="testimonial section">
-                
-            </section>
-
-            <!--==================== CONTACT ME ====================-->
-            <section class="contact section" id="contact">
-
-            </section>
-        </main>
-
-        <!--==================== FOOTER ====================-->
-        <footer class="footer">
-         
-        </footer>
-        
-        <!--==================== SCROLL TOP ====================-->
-        
-
-        <!--==================== SWIPER JS ====================-->
-        <script src=""></script>
-
-        <!--==================== MAIN JS ====================-->
-        <script src="assets/js/main.js"></script>
-    </body>
+    <!-- scroll reveal -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <!-- typed js -->
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <!-- custom js -->
+    <script src="JS/script.js"></script>
+  </body>
 </html>
