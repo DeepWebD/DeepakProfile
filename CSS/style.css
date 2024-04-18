@@ -234,25 +234,37 @@ span {
 .skill-card{
   width: 100%;
   display: flex;
-  flex-direction: row;
+  margin: 1rem auto;
+
 }
-.skill-card i{
+
+.skill-icon{
+  width: 20%;
+}
+.skill-icon i{
   font-size: 4rem;
 }
-.progress-container {
-  width: 80%;
+.skill-details{
+   width: 100%;
+}
+.skill-container {
+  width: 100%;
   background-color: #ddd;
-  border-radius: 0.5rem;
-  margin: 2rem auto;
+  border-radius: 0.25rem;
+  margin: 0.25rem auto;
   height: 0.5rem;
 }
 
-.progress-bar {
+.skill-bar {
   height: 100%;
   background-color: var(--main-color);
   border-radius: 0.5rem;
   width: 0;
   transition: width 0.5s ease;
+}
+.skill-label{
+  font-size: 1.6rem;
+   text-align: left;
 }
 
 
