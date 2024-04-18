@@ -231,11 +231,35 @@ span {
 .skills-box h3 {
   font-size: 2.6rem;
 }
+.skill-card{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+.skill-card i{
+  font-size: 4rem;
+}
+.progress-container {
+  width: 80%;
+  background-color: #ddd;
+  border-radius: 0.5rem;
+  margin: 2rem auto;
+  height: 0.5rem;
+}
 
-.skills-box p {
+.progress-bar {
+  height: 100%;
+  background-color: var(--main-color);
+  border-radius: 0.5rem;
+  width: 0;
+  transition: width 0.5s ease;
+}
+
+
+/* .skills-box p {
   font-size: 1.6rem;
   margin: 1rem 0;
-}
+} */
 
 .portfolio {
   background: var(--second-bg-color);
