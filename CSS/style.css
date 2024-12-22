@@ -240,6 +240,15 @@ span {
 .portfolio {
   background: var(--second-bg-color);
 }
+.portfolio-professional-project{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2.6rem;
+  margin-bottom: 20px;
+  gap: 2rem;
+  color: var(--text-color);
+}
 
 .portfolio h2 {
   margin-bottom: 4rem;
@@ -251,7 +260,7 @@ span {
   align-items: center;
   gap: 2.5rem;
 }
-
+ 
 .portfolio-container .portfolio-box {
   position: relative;
   border-radius: 2rem;
@@ -355,6 +364,45 @@ span {
 .contact form .btn {
   margin-top: 2rem;
   cursor: pointer;
+}
+
+.success-message{
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+  border: 2px solid green;
+  background-color: rgba(0, 128, 0, 0.287);
+  padding: 1rem;
+  border-radius: 1rem;
+  justify-content: center;
+  align-items: center;
+  font-size: 2.6rem;
+  margin: 0 auto;
+  position: relative;
+}
+
+.close-message{
+  position: absolute;
+  right: 8px;
+  font-size: 2rem;
+  top: -4px;
+  cursor: pointer;
+  font-weight: 200;
+}
+
+.failed-message{
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+  border: 2px solid rgb(255, 0, 119);
+  background-color: rgba(255, 0, 0, 0.147);
+  padding: 1rem;
+  border-radius: 1rem;
+  justify-content: center;
+  align-items: center;
+  font-size: 2.6rem;
+  margin: 0 auto;
+  position: relative;
 }
 
 .footer {
@@ -502,6 +550,9 @@ span {
   .contact form .input-box input {
     width: 100%;
   }
+  .portfolio-professional-project{
+    flex-direction: column;
+  }
 }
 
 @media (max-width: 365px) {
@@ -522,3 +573,6 @@ span {
     margin-top: 2rem;
   }
 }
+
+
+/* Loader */

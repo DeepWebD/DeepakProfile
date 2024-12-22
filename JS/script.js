@@ -55,7 +55,7 @@ ScrollReveal().reveal(".home-content p, .about-content", { origin: "right" });
 
 //==============Typed JS===========
 const typed = new Typed(".multiple-text", {
-  strings: ["Front end developer", "Blogger"],
+  strings: ["Full Stack developer", "Web Developer"],
   typeSpeed: 100,
   backSpeed: 100,
   backDelay: 1000,
@@ -71,3 +71,6 @@ function readMoreAboutMe() {
   console.log("Hide profile pic --- show more about");
   aboutImage.classList += " toggleImage";
 }
+
+
+// Message form
